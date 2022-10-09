@@ -1,0 +1,13 @@
+spring:
+  port: ${PORT:7766}
+  jpa:
+    database: POSTGRESQL
+    show-sql: true
+    hibernate:
+      ddl-auto: none
+  datasource:
+    platform: postgres
+    url: jdbc:postgresql://localhost:5432/fckdelphi-db
+    username: ${DB_USER:null}
+    password: ${DB_PASSWORD:null}
+    driverClassName: org.postgresql.Driver
